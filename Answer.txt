@@ -1,0 +1,53 @@
+Q1. Why do we call Python as a general purpose and high-level programming language?
+
+Ans-Python is general purpose because it is used in many real time application development.For Example-
+          1-Development of Gaming Applications.
+          2- Web Application development
+          3- Data Visualization  etc..
+In Python Programming Languages, Even we represent the data in lower level data like Binary, Octal and Hexa decimal , the High Level Programming Languages automatically converts into Decimal number System data, which is understanble by Programmers and end-users   and python is one High Level Programming Language.
+
+Q2. Why is Python called a dynamically typed language?
+ans-In python Programming the programer nned not specify the data type and whose data type is dynamically Assigned by the Python Execution Enviroment .
+So it is called dynamically typed language..
+
+Q3. List some pros and cons of Python programming language?
+ans-Pro-
+          1.python has large Community.
+          2.It is Simple to use.
+          3.It provide large Libraries
+          4.High level programming language
+          5.dynamically typed
+          6.Both functional and object oriented programming language.
+     cons-
+          1.it is little bit slower than complied language
+          2.Python programming language take large memory Consumption
+          3.Python programming language weak in databases access layers
+
+Q4. In what all domains can we use Python?
+    1.Development of Gaming Applications
+    2.Web Application development
+    3.Data Visualization 
+    4.Bussiness Application
+    5.Data Analysis and Data Analytics
+    6.Automation of Testing
+
+
+Q5. What are variable and how can we declare them?
+ans-A variable is notthing bt it a value which is enter by the end user in real time project.
+     A variable is the combination of alphabate,number.digit,and special symbol(_)
+     for Example=  x=10
+                    _i1=50
+                    sal123=33.33
+
+Q6. How can we take an input from the user in Python?
+ans-In python programing There is keyword call "input()" which is take input from user.
+   for Example-
+               x=input("Enter ur Name")
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+1- default datatype of the value that has been taken as an input using input() function are 
+               1-int()
+               2-float()
+               3-bool()
+               4-real()
+               5-dir()
