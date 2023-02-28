@@ -48,6 +48,20 @@ Q7. What is the default datatype of the value that has been taken as an input us
 1- default datatype of the value that has been taken as an input using input() function are 
                1-int()
                2-float()
-               3-bool()
-               4-real()
-               5-dir()
+
+8. What is type casting?
+Ans-The process of converting one type possible value into anoter type of value is called type casting.
+     Example-
+               a=int(input("Enter the number:"))
+               
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why? 
+Ans- Yes we can take More than one input from the user using single input() function by using split() function.
+     a, ,b, c = input (“Enter your age: “).split ()
+
+Q10. What are keywords?
+Ans-Keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes.
+    Example-if,else,True,Flase etc...
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+Ans- No,we can not use keywords as variable.because they are special reserved words used for operfrom specific opertion.
+     
