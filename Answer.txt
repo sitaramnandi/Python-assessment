@@ -51,4 +51,4 @@ Q7. What is the default datatype of the value that has been taken as an input us
                3-bool()
                4-real()
                5-dir()
-Q8. What is type casting?
+
