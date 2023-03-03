@@ -65,3 +65,100 @@ Ans-Keywords are special reserved words that have specific meanings and purposes
 Q11. Can we use keywords as a variable? Support your answer with reason.
 Ans- No,we can not use keywords as variable.because they are special reserved words used for operfrom specific opertion.
      
+Q12. What is indentation? What's the use of indentaion in Python?
+Ans-Indentation reffers to white space before a statement.Python uses indentation to indicate a block of statement/code.
+
+Q13. How can we throw some output in Python?
+Ans-we can throw some output in Python with the help of print.
+
+Q14. What are operators in Python?
+Ans-operator is symbol  which is used for performing some opertion.
+     There are 7 type of opertor in python.
+       1-Arithematic operator
+       2-Assesment operator
+       3-Logical operator
+       4-Relational operator
+       5-Bitwise operator
+       6-Membership operator
+       7-Indentity operator
+
+Q15. What is difference between / and // operators?
+Ans-    / id called divison operator.Ex-10/3=3.333
+
+      and // is called floor divison  Ex-10/2=3
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+Ans- print("iNeuroniNeuroniNeuroniNeuron")
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+Ans-  n=int(input("Enter the number:"))
+     if n%2==0:
+          print("It is Even Number")
+     else:
+          print("It is odd Number")
+Q18. What are boolean operator?
+ans- Boolean operators are and, or and not .
+
+Q19. What will the output of the following?
+
+Ans- 1 or 0 =1
+
+     0 and 0=0
+
+      True and False and True=Flase
+
+     1 or 0 or 0=1
+
+Q20. What are conditional statements in Python?
+Ans- if statement,if else statement,if elif else ladder are called conditional statements in Python.
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+Ans- 'if','elif','else' are conditional statements. And it is used for  decision making that is required when we want to execute code based on a particular condition.
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+Ans- while True:
+          try:
+    
+               age=int(input("Enter The age:"))
+     
+               if age>=18:
+                     print("I can vote")
+               else:
+                    print("I can't vote")
+          except ValueError:
+                    print("Do not Enter The Str and Any special symbol")
+
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+''''''
+Ans- lst = [12, 75, 150, 180, 145, 525, 50]
+     sum=0
+     for i in lst:
+          sum=sum+i
+     print("Total Sum Of lst={}".format(sum))
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+Ans- while True:
+          try:
+               num1=int(input("Enter The first Number:"))
+               num2=int(input("Enter the second number:"))
+               num3=int(input("Enter The third number:"))
+               if num2<=num1>num3:
+                    print("{} Is greatest".format(num1))
+               elif num1<num2>=num3:
+                    print("{} Is greatest".format(num2))
+               elif num1<=num3>num2:
+                    print("{} Is greatest".format(num3))
+               else:
+                    print("All are equall")
+          except ValueError:
+          print("Do not Enter Str and any Special Symbol!!! Try-again")
+
+
+
+
