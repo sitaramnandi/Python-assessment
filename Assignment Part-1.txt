@@ -19,7 +19,7 @@ ans-Pro-
           5.dynamically typed
           6.Both functional and object oriented programming language.
      cons-
-          1.it is little bit slower than complied language
+          1.it is little bit slower than complied language(C,C++)
           2.Python programming language take large memory Consumption
           3.Python programming language weak in databases access layers
 
@@ -33,7 +33,7 @@ Q4. In what all domains can we use Python?
 
 
 Q5. What are variable and how can we declare them?
-ans-A variable is notthing bt it a value which is enter by the end user in real time project.
+Ans- A variable is a symbolic name that is a refference or pointer to an object .Once an object is assigned to a variable, you can refer to the object by that name.
      A variable is the combination of alphabate,number.digit,and special symbol(_)
      for Example=  x=10
                     _i1=50
@@ -45,9 +45,7 @@ ans-In python programing There is keyword call "input()" which is take input fro
                x=input("Enter ur Name")
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
-1- default datatype of the value that has been taken as an input using input() function are 
-               1-int()
-               2-float()
+Ans- String
 
 8. What is type casting?
 Ans-The process of converting one type possible value into anoter type of value is called type casting.
@@ -55,8 +53,8 @@ Ans-The process of converting one type possible value into anoter type of value 
                a=int(input("Enter the number:"))
                
 Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why? 
-Ans- Yes we can take More than one input from the user using single input() function by using split() function.
-     a, ,b, c = input (“Enter your age: “).split ()
+Ans- Yes ,we can take More than one input from the user using single input() function by using split() function.
+     a, ,b, c = input ("Enter your age:" ).split ()
 
 Q10. What are keywords?
 Ans-Keywords are special reserved words that have specific meanings and purposes and can’t be used for anything but those specific purposes.
@@ -69,7 +67,7 @@ Q12. What is indentation? What's the use of indentaion in Python?
 Ans-Indentation reffers to white space before a statement.Python uses indentation to indicate a block of statement/code.
 
 Q13. How can we throw some output in Python?
-Ans-we can throw some output in Python with the help of print.
+Ans-we can throw some output in Python with the help of "print()" function.
 
 Q14. What are operators in Python?
 Ans-operator is symbol  which is used for performing some opertion.
@@ -91,7 +89,7 @@ Q16. Write a code that gives following as an output.
 ```
 iNeuroniNeuroniNeuroniNeuron
 ```
-Ans- print("iNeuroniNeuroniNeuroniNeuron")
+Ans- print("iNeuron"*4)
 
 Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
 Ans-  n=int(input("Enter the number:"))
@@ -114,6 +112,8 @@ Ans- 1 or 0 =1
 
 Q20. What are conditional statements in Python?
 Ans- if statement,if else statement,if elif else ladder are called conditional statements in Python.
+      In large projects we have to control the flow of execution of our program and we want to execute some set of statements only if the given condition is satisfied, and a different set of statements when it’s not satisfied.
+      
 
 Q21. What is use of 'if', 'elif' and 'else' keywords?
 Ans- 'if','elif','else' are conditional statements. And it is used for  decision making that is required when we want to execute code based on a particular condition.
@@ -158,6 +158,24 @@ Ans- while True:
                     print("All are equall")
           except ValueError:
           print("Do not Enter Str and any Special Symbol!!! Try-again")
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+The number must be divisible by five
+
+If the number is greater than 150, then skip it and move to the next number
+
+If the number is greater than 500, then stop the loop
+Ans-
+     numbers = [12, 75, 150, 180, 145, 525, 50]
+     lst = []
+     for num in numbers:
+          if num > 150:
+               if num > 500:
+                    break
+          elif num%5==0:
+               lst.append(num) 
+
+     print(lst)
 
 
 
