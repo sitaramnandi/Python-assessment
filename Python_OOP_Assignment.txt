@@ -1,0 +1,251 @@
+Q1. What is the purpose of Python's OOP?
+Ans- The purpose of Object-Oriented Programming (OOP) in Python (and in general) is to provide a programming paradigm that allows developers to organize their code into reusable and maintainable components, which are represented by objects.
+     In Python, everything is an object, including integers, strings, functions, and even classes. OOP in Python is based on the concept of classes and objects. A class is a blueprint for creating objects, which are instances of that class. Objects have attributes (variables) and methods (functions) that are defined by the class.
+
+Q2. Where does an inheritance search look for an attribute?
+Ans- When an object in Python attempts to access an attribute (i.e., a variable or method) that is not defined in its own class, the interpreter will perform an inheritance search to look for the attribute in the object's superclass(es).
+
+Q3. How do you distinguish between a class object and an instance object?
+Ans-   when we create a class in python then a class object is created so whenever python finds a class statement in the whole program then it creates a class object and assigns a name to that object i.e. class name.
+       when we call a class, it creates an instance object of that class from which the object has been created.
+
+Q4. What makes the first argument in a class’s method function special?
+Ans- __init__  makes the first argument in a class’s method function special.
+
+Q5. What is the purpose of the init method?
+Ans- The purpose of init method is to initlize the object. It is automaticall call by the pvm during object creation.
+
+Q6. What is the process for creating a class instance?
+Ans-  First step- define a class
+      Second Step- Instantiate the class
+      Third Step-  Set object properties
+      Fourth step- Call object methods
+      # Define the class
+     class Car:
+     def __init__(self, make, model, year):
+          self.make = make
+          self.model = model
+          self.year = year
+
+     def drive(self):
+          print(f"The {self.make} {self.model} is driving...")
+
+     # Instantiate the class
+     my_car = Car("Toyota", "Camry", 2022)
+
+     # Set object properties
+     my_car.color = "blue"
+
+     # Call object methods
+     my_car.drive()
+
+
+
+Q7. What is the process for creating a class?
+Ans- To create a class in python we use a keyword class.
+     Example: class number:
+                    x=10
+          
+Q8. How would you define the superclasses of a class?
+Ans- supper() is one of the pre-defined function which is uswed for calling the superclasses original method from constructor of derived class.
+    synatx-supper().methodname(list of value if any)
+
+Q9. What is the relationship between classes and modules?
+Ans- class is collection of the data memebr and method 
+     And modules is collection of variables,function,classes.
+
+Q10. How do you make instances and classes?
+Ans- class is a collection of instance data memebr and methods.
+     Ex- class Employee():
+               passs
+
+     An instance is an individual object that is created from a class.
+     Ex- class Employee():
+               def __init__(self,ename,esal):
+                    self.ename=ename
+                    self.esal=esal
+
+Q11. Where and how should be class attributes created?
+Ans- Class attributes should be created inside the class definition, but outside of any methods. They can be assigned a value directly or computed based on other variables or class methods. Here is an example:
+     class MyClass:
+    class_attribute = "Hello"
+
+    def __init__(self, instance_attribute):
+        self.instance_attribute = instance_attribute
+
+    def instance_method(self):
+        print(f"{self.instance_attribute} says {MyClass.class_attribute}!")
+
+     print(MyClass.class_attribute) # Output: Hello
+
+     instance1 = MyClass("Instance1")
+     instance1.instance_method() # Output: Instance1 says Hello!
+
+
+Q12. Where and how are instance attributes created?
+Ans- Instance attributes are variables that belong to a specific instance of a class rather than the class itself. They are defined inside the __init__() method.
+     example- class Car:
+                    def __init__(self, make, model, year):
+                         self.make = make
+                         self.model = model
+                         self.year = year
+               my_car = Car("Toyota", "Corolla", 2022)
+
+Q13. What does the term "self" in a Python class mean?
+Ans- Self is an implecity object which contain address of  current object  .
+     self is first formal parameter in the instance method.
+     since  self is a formal parameter so we can access inside the coressponding Instance method definition only but not possible to access other part of the program.
+
+Q14. How does a Python class handle operator overloading?
+Ans- In Python, operator overloading allows developers to define how operators such as +, -, *, /, ==, !=, and others behave for instances of a class. This can be very useful for creating custom classes that behave like built-in types.
+
+          To overload an operator for a class in Python, you need to define a special method that corresponds to the operator you want to overload. For example:
+
+          __add__(self, other) for the + operator
+          __sub__(self, other) for the - operator
+          __mul__(self, other) for the * operator
+          __truediv__(self, other) for the / operator
+          __eq__(self, other) for the == operator
+          __ne__(self, other) for the != operator
+     
+Q15. When do you consider allowing operator overloading of your classes?
+Ans-Operator overloading can be useful when you want to create custom classes that behave like built-in types.
+
+Q16. What is the most popular form of operator overloading?
+Ans- In Python, the most popular form of operator overloading is probably the __add__() method, which is used to overload the '+' operator. This is because the + operator is commonly used for concatenating strings, joining lists or tuples, and adding numbers, and overloading it can make code more concise and readable.
+
+Q17. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+
+Ans- Classes: A class is a blueprint or template for creating objects that encapsulate data and behavior. It defines the attributes (variables) and methods (functions) that the objects of the class will have.
+
+     Objects: An object is an instance of a class. It is created from the class blueprint and has its own unique set of attributes and methods. Objects can interact with each other through their methods, and they can also inherit attributes and methods from parent classes.
+
+Q18. Describe three applications for exception processing.
+Ans- Exception handle is nothing converting technical error message to user friendly error message.
+      Here are three applications for exception processing:
+      1-Input validation: Exception processing can be used to validate user input and handle errors that may occur if the input is invalid.
+      2- File handling: Exception processing is often used when reading and writing files, as errors can occur if the file does not exist, is inaccessible, or if there is an issue with the file format. By handling these exceptions, the program can alert the user to the issue and take appropriate action, such as prompting the user to select a different file or exiting the program gracefully.
+      3-Network communication: Exception processing can also be used in network communication to handle errors that may occur when sending or receiving data. For example, if there is a network issue or the remote server is unavailable, an exception can be raised and handled to retry the communication or alert the user to the issue.
+
+Q19. What happens if you don't do something extra to treat an exception?
+Ans- If you don't do something extra to treat an exception in your code, the exception will propagate up the call stack until it reaches the top-level of your program, which may result in your program terminating abnormally.
+
+
+Q20. What are your options for recovering from an exception in your script?
+Ans- options for recovering from an exception in your script are 
+     1-Try-except block This is a commonly used method to handle exceptions in Python scripts.
+     2-Raise a custom exception: In some cases, you might want to raise a custom exception when an error occurs, rather than handling it in the try-except block.
+     3-Retry the operation: If the exception was caused by a temporary error, such as a network connection failure, you might want to retry the operation after a short delay.
+
+Q21. Describe two methods for triggering exceptions in your script.
+Ans- Raise an exception manually: You can manually raise an exception in your script using the raise keyword. 
+     Ex- x= 10
+          if x > 5:
+          raise Exception("x should be less than 5")
+     2-Try to perform an invalid operation: Another way to trigger an exception is to attempt an operation that is not allowed or that would result in an error. For example, if you try to divide a number by zero, you will get a ZeroDivisionError. 
+                    my_list = [1, 2, 3]
+                    print(my_list[3])  # This will raise an IndexError
+
+
+Q22. Identify two methods for specifying actions to be executed at termination time, regardless of
+whether or not an exception exists.
+Ans- 1-Finally block: The finally block in a try-except statement is a section of code that is always executed, regardless of whether an exception was raised or not. 
+     2-Atexit module: The atexit module provides a way to register functions that should be called when a Python script is about to exit, whether normally or due to an exception. 
+
+
+Q23. What is the purpose of the try statement?
+Ans-It is the block in which write block of statement generating exception.
+     when an exception occurs in try block then pvm comes out try block and execute appropriate except block.
+     Every try block must follow the except  block.zX
+
+
+Q24. What are the two most popular try statement variations?
+Ans-In Python, the most popular try statement variations are: 
+try:
+    # code to be executed
+except ExceptionType:
+    # code to handle the exception
+finally:
+    # code to always be executed, whether or not an exception is raised
+
+
+Q25. What is the purpose of the raise statement?
+aNS- The purpose of raise statement are
+     =>raise keyword is used for hitting / raising / generating the exception provided some 
+          condition must be satisfied.
+     =>raise keyword always used inside of Function Definition only.
+     =>PVM uses raise keyword implicitly for hitting pre-defined Exceptions where as Programmer makes the PVM to use  raise keyword explicitly for Hitting or Generating Programmer-defined Exceptions.
+
+Q26. What does the assert statement do, and what other statement is it like?
+Ans- The assert statement in Python is used to assert that a condition is true. If the condition is false, the assert statement will raise an AssertionError exception.
+
+Q27. What is the purpose of the with/as argument, and what other statement is it like?
+Ans-  The primary purpose of the with/as statement is to ensure that these resources are properly released even if an exception is raised or an error occurs during the execution of the program.
+     with open('file.txt', 'r') as file:
+    content = file.read()
+    print(content)
+
+Q28. What are *args, **kwargs?
+Ans- *args is variable length argument and **kwargs is call variable length argument.
+
+Q29. How can I pass optional or keyword parameters from one function to another?
+Ans- In python we can pass the optional and keyword parameter using *args synatx.
+     Example- 
+     def func3(**kwargs):
+    func4(**kwargs)
+
+     def func4(**kwargs):
+          for key, value in kwargs.items():
+               print(key, value)
+
+     func3(a=1, b=2, c=3) # Output: a 1 b 2 c 3
+
+
+Q30. What are Lambda Functions?
+Ans- 
+=>Anonymous Functions are those which does not contain any name explicitly.
+=>The purpose of Anonymous Function is that "To Perform Instant Operations".
+=>Instant Operations are those which are used at that point time only and no longer 
+    interested to use in other part of Project.
+=>To develop Anonymous Function, we use a keyword called "lambda" and hence 
+    Anonymous Function are called Lambda Functions.
+
+Q31. Explain Inheritance in Python with an example?
+Ans-Inheritance is a key concept in object-oriented programming (OOP) that allows you to create a new class that is a modified version of an existing class. In Python, you can implement inheritance by creating a new class that inherits the attributes and methods of an existing class. The new class is called the "subclass" or "derived class", and the existing class is called the "base class" or "parent class".
+
+     class Animal:
+          def __init__(self, name):
+               self.name = name
+    
+          def speak(self):
+               pass
+
+     class Dog(Animal):
+           def speak(self):
+             return "Woof"
+
+     class Cat(Animal):
+          def speak(self):
+               return "Meow"
+
+Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
+Ans- If a class C inherits from classes A and B as class C(A, B), and both A and B have their own versions of a method called func(), then the version of func() that gets invoked when we call func() from an object of class C depends on the method resolution order (MRO) of the classes.
+     the version of func() that gets invoked when we call func() from an object of class C depends on the MRO of the classes C, A, and B, which is determined by the implementation of the C3 linearization algorithm.
+
+Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+
+Ans- In Python, you can use the following built-in functions to determine the type of an instance and its inheritance:
+
+     type(obj): returns the type of the object obj.
+
+     isinstance(obj, class): returns True if the object obj is an instance of the class class or a subclass of class, and False otherwise.
+
+     issubclass(cls, class_or_tuple): returns True if the class cls is a subclass of the class or tuple of classes specified by class_or_tuple, and False otherwise.
+
+Q34.Explain the use of the 'nonlocal' keyword in Python.
+Ans- In Python, the nonlocal keyword is used inside nested functions to indicate that a variable is not local to the current function, but is instead a variable of the nearest enclosing function. The nonlocal keyword allows you to modify the value of a variable in the enclosing function's scope, without having to use global variables.
+
+Q35. What is the global keyword?
+Ans- =>When we want MODIFY the GLOBAL VARIABLE values in side of function defintion  then global variable names must be preceded with 'global' keyword otherwise we get "UnboundLocalError: local variable names referenced before assignment"
+
+
