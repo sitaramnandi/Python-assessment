@@ -1,0 +1,92 @@
+How do you load a CSV file into a Pandas DataFrame?
+Ans- To load a CSV filr into a Pandas DataFrame we use a predefind function read_csv().
+    Ex- import pandas as pd
+        df = pd.read_csv('filename.csv')
+
+Q2. How do you check the data type of a column in a Pandas DataFrame?
+Ans- To check the data type of a column in a Pandas DataFrame, you can use the dtype attribute of the column.
+
+Q3. How do you select rows from a Pandas DataFrame based on a condition?
+
+Ans-To select rows from a Pandas DataFrame based on a condition, you can use boolean indexing. Boolean indexing allows you to filter the DataFrame based on a condition and retrieve only the rows that satisfy that condition.
+
+Q4. How do you rename columns in a Pandas DataFrame?
+Ans-
+To rename columns in a Pandas DataFrame, you can use the rename() function. This function allows you to specify new names for one or multiple columns in the DataFrame.
+
+Q5. How do you drop columns in a Pandas DataFrame?
+An-To drop columns in a Pandas DataFrame, you can use the drop() function. This function allows you to remove one or multiple columns from the DataFrame.
+
+Q6. How do you find the unique values in a column of a Pandas DataFrame?
+Ans-To find the unique values in a column of a Pandas DataFrame, you can use the unique() function. This function returns an array of unique values present in the specified column.
+
+Q7. How do you find the number of missing values in each column of a Pandas DataFrame?
+Ans-
+To find the number of missing values in each column of a Pandas DataFrame, you can use the isnull() function in combination with the sum() function.
+
+Q8. How do you fill missing values in a Pandas DataFrame with a specific value?
+Ans-
+To fill missing values in a Pandas DataFrame with a specific value, you can use the fillna() function. This function allows you to replace missing values with a given scalar value or any other desired value.
+
+Q9. How do you concatenate two Pandas DataFrames?
+
+Ans-
+To concatenate two Pandas DataFrames, you can use the concat() function. This function allows you to combine DataFrames vertically or horizontally along a specified axis
+
+Q10. How do you merge two Pandas DataFrames on a specific column?
+Ans-o merge two Pandas DataFrames on a specific column, you can use the merge() function. This function allows you to combine DataFrames based on a common column or columns.
+
+Q11. How do you group data in a Pandas DataFrame by a specific column and apply an aggregation function?
+ans-
+To group data in a Pandas DataFrame by a specific column and apply an aggregation function, you can use the groupby() function. This function allows you to group rows based on a column or columns and perform various aggregations on the grouped data.
+
+Q12. How do you pivot a Pandas DataFrame?
+Ans-To pivot a Pandas DataFrame, you can use the pivot() function. This function reshapes the data by converting unique values from one column into multiple columns, creating a new DataFrame.
+
+Q13. How do you change the data type of a column in a Pandas DataFrame?
+Ans-
+To change the data type of a column in a Pandas DataFrame, you can use the astype() function. This function allows you to convert the data type of a column to a different type.
+
+Q14. How do you sort a Pandas DataFrame by a specific column?
+Ans-To sort a Pandas DataFrame by a specific column, you can use the sort_values() function. This function allows you to sort the DataFrame based on one or more columns.
+
+Q15. How do you create a copy of a Pandas DataFrame?
+Ans- To create a copy of a Pandas DataFrame, you can use the copy() function. This function creates a deep copy of the DataFrame, ensuring that any modifications made to the copied DataFrame do not affect the original DataFrame.
+
+Q16. How do you filter rows of a Pandas DataFrame by multiple conditions?
+Ans-
+To filter rows of a Pandas DataFrame by multiple conditions, you can use logical operators (& for "and", | for "or") and parentheses to combine multiple conditions.
+
+Q17. How do you calculate the mean of a column in a Pandas DataFrame?
+Ans-
+To calculate the mean of a column in a Pandas DataFrame, you can use the mean() function. This function calculates the average value of the specified column.
+
+Q18. How do you calculate the standard deviation of a column in a Pandas DataFrame?
+Ans-To calculate the standard deviation of a column in a Pandas DataFrame, you can use the std() function. This function calculates the standard deviation of the specified column, which measures the dispersion or spread of the data.
+
+Q19. How do you calculate the correlation between two columns in a Pandas DataFrame?
+Ans-corr() function. This function computes the pairwise correlation between the columns, providing a measure of the linear relationship between them.
+
+Q20. How do you select specific columns in a DataFrame using their labels?
+Ans-To select specific columns in a DataFrame using their labels, you can use indexing with the column labels or the loc indexer in Pandas.
+
+Q21. How do you select specific rows in a DataFrame using their indexes?
+
+Ans-To select specific rows in a DataFrame using their indexes, you can use indexing with the row indexes or the iloc indexer in Pandas.
+
+Q22. How do you sort a DataFrame by a specific column?
+Ans-
+To sort a DataFrame by a specific column, you can use the sort_values() function in Pandas. This function allows you to sort the DataFrame based on one or more columns.
+
+Q23. How do you create a new column in a DataFrame based on the values of another column?
+Ans-To create a new column in a DataFrame based on the values of another column, you can assign a new column name and provide the desired calculation or transformation using the existing column(s).
+
+Q24. How do you remove duplicates from a DataFrame?
+Ans-To remove duplicates from a DataFrame, you can use the drop_duplicates() function in Pandas. This function removes duplicate rows based on the specified columns or all columns by default.
+
+Q25. What is the difference between .loc and .iloc in Pandas?
+Ans- In Pandas, both .loc and .iloc are used for indexing and selecting data from a DataFrame or Series, but they have some differences in their functionality:
+
+.loc is primarily label-based indexing, meaning it is used to select data based on the labels or indexes of rows and columns. It uses explicit row and column labels to access data. The syntax for .loc is df.loc[row_indexer, column_indexer].
+
+.iloc is primarily integer-based indexing, meaning it is used to select data based on the integer positions of rows and columns. It uses implicit integer positions to access data. The syntax for .iloc is df.iloc[row_indexer, column_indexer].
